@@ -52,7 +52,7 @@ class AuthController(
         SecurityContextHolder.getContext().authentication = authentication
         val user = authentication.principal as AppUser
         val jwtToken = jwtTokenProvider.generateToken(authentication)
-
+        println("ENTRA A LOGIN")
         return JwtUserResponse(jwtToken, user.toGetUser())
     }
 

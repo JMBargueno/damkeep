@@ -36,6 +36,7 @@ class NoteController(val noteService: NoteService) {
 
     @GetMapping("/")
     fun getNotesByUser(@AuthenticationPrincipal user: AppUser): List<GetNote> {
+        println("ENTRA A GETNOTESBYUSER")
         val result: List<Note> = noteService.findByUser(user)
         if (result.isNotEmpty()) return result.map { it.toGetNote() }
         else throw ResponseStatusException(HttpStatus.NO_CONTENT, "Sin notas")

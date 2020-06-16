@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DamKeepApp</string>
+    <string name="string_title">Title</string>
+    <string name="string_username">Username</string>
+    <string name="string_password">Password</string>
+    <string name="string_login">Login</string>
+    <string name="string_register">Register</string>
+    <string name="string_logout">Logout</string>
+    <string name="string_save">Guardar</string>
+    <string name="string_content">Contenido</string>
+</resources>
